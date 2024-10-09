@@ -15,10 +15,15 @@ git clone https://github.com/2enigma4/MyTaskManager-Backend.git
 ### Steps to connect with MySQL Locally
 
 1. Open Application.properties under resource folder
-2. Update following properties with your mysql username and password:
+   
+3. Update following properties with your mysql username and password:
+   
     spring.datasource.username=<your_username>
+    
     spring.datasource.password=<your_password>
-3. Run the below Script in your mysql database: 
+    
+5. Run the below Script in your mysql database:
+   
     CREATE TABLE tasks (
       id BIGINT PRIMARY KEY,
       title VARCHAR(255) NOT NULL,
